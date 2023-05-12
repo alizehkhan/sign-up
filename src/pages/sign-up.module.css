@@ -1,0 +1,10 @@
+.title {
+  line-height: 1.1;
+  font-size: var(--font-size-6);
+  font-weight: 400;
+  margin: var(--spacing-9) 0 var(--spacing-4) 0;
+}
+
+.subtitle {
+  font-size: var(--font-size-4);
+}

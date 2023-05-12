@@ -1,0 +1,19 @@
+.button {
+  margin-top: var(--spacing-7);
+}
+
+.inputPair {
+  display: flex;
+  gap: var(--spacing-4);
+  margin: var(--spacing-8) 0 var(--spacing-4) 0;
+}
+
+.inputPair > div {
+  flex: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .inputPair {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,21 @@
+name: Test
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+      - run: yarn install --frozen-lockfile
+      - run: yarn test
+      - uses: cypress-io/github-action@v5
+        with:
+          build: yarn build
+          start: yarn dev

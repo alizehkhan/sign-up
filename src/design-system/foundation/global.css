@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-body);
+  color: var(--color-grey-800);
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.4;
+}
+
+strong {
+  font-weight: 700;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-family: var(--font-family-heading);
+}
+
+/* Reset css for swiper (carousel package) */
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  height: unset;
+}

@@ -1,0 +1,9 @@
+{
+  "collectCoverageFrom": ["src/**/*.{ts,tsx}", "!src/**/*.d.ts"],
+  "moduleNameMapper": {
+    "\\.(css|less)$": "identity-obj-proxy",
+    "^@design-system(.*)$": "<rootDir>/src/design-system/components$1"
+  },
+  "setupFilesAfterEnv": ["<rootDir>/jest-setup.ts"],
+  "testEnvironment": "jsdom"
+}

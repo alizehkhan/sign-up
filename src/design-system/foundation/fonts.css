@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Aeonik Pro TRIAL';
+  src: url('../assets/AeonikProTRIAL-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Aeonik Pro TRIAL';
+  src: url('../assets/AeonikProTRIAL-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/Inter-Bold.ttf') format('truetype');
+  font-weight: 700;
+}

@@ -1,0 +1,38 @@
+.button {
+  background-color: var(--color-lime-400);
+  border: none;
+  width: 100%;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  font-size: var(--font-size-3);
+  color: var(--color-grey-800);
+  font-weight: 600;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.button:hover:not(.loading) {
+  background: linear-gradient(
+    180deg,
+    var(--color-lime-400) 0%,
+    var(--color-lime-500) 100%
+  );
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px var(--color-lime-100);
+}
+
+.button:disabled:not(.loading) {
+  background-color: var(--color-grey-50);
+  color: var(--color-grey-400);
+}
+
+.loading,
+.button:active {
+  background-color: var(--color-lime-500);
+}

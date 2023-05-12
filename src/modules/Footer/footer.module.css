@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  font-size: var(--font-size-1);
+  margin-bottom: var(--spacing-7);
+  margin-top: var(--spacing-7);
+  gap: var(--spacing-2);
+  align-items: center;
+}
+
+.footer p,
+.footer a,
+.footer div {
+  color: var(--color-grey-400);
+}
+
+.footer a:hover {
+  color: var(--color-grey-700);
+}
+
+.separator {
+  font-size: var(--font-size-4);
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    justify-content: center;
+  }
+}

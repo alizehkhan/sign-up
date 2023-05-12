@@ -1,0 +1,42 @@
+:root {
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 24px;
+  --spacing-6: 32px;
+  --spacing-7: 40px;
+  --spacing-8: 64px;
+  --spacing-9: 80px;
+  --border-radius-sm: 10px;
+  --border-radius-md: 20px;
+  --font-family-heading: "Aeonik Pro TRIAL", sans-serif;
+  --font-family-body: "Inter", sans-serif;
+  --font-size-1: 12px;
+  --font-size-2: 14px;
+  --font-size-3: 16px;
+  --font-size-4: 20px;
+  --font-size-5: 32px;
+  --font-size-6: 48px;
+  --color-lime-100: #cee9bc;
+  --color-lime-400: #9fe870;
+  --color-lime-500: #88e14f;
+  --color-grey-50: #eff0ed;
+  --color-grey-100: #d2d1d1;
+  --color-grey-200: #ced3cf;
+  --color-grey-400: #969e98;
+  --color-grey-500: #405a59;
+  --color-grey-600: #04504c;
+  --color-grey-700: #2c4443;
+  --color-grey-800: #193433;
+  --color-red-700: #f03e3e;
+}
+
+/*
+@media
+--breakpoint-xs: 576px;
+--breakpoint-sm: 768px;
+--breakpoint-md: 992px;
+--breakpoint-lg: 1200px;
+--breakpoint-xl: 1444px;
+*/

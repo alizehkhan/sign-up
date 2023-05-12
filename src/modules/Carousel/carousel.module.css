@@ -1,0 +1,27 @@
+.item {
+  border-radius: var(--border-radius-sm);
+  object-fit: cover;
+}
+
+.pattern {
+  background-image: url("/logo-pattern.svg");
+  background-color: var(--color-lime-400);
+  background-size: 360px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: var(--border-radius-sm);
+  height: 100%;
+}
+
+.split {
+  font-size: var(--font-size-5);
+  border-radius: var(--border-radius-sm);
+  height: 100%;
+  align-items: center;
+  font-weight: 700;
+  background-color: var(--color-grey-600);
+  font-family: var(--font-family-heading);
+  color: white;
+  display: flex;
+  justify-content: center;
+}

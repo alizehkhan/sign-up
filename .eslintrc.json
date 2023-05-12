@@ -1,0 +1,15 @@
+{
+  "extends": ["react-app"],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": ["external", "internal", "parent", "sibling", "index"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "caseInsensitive": true
+        }
+      }
+    ]
+  }
+}

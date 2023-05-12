@@ -1,0 +1,29 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  gap: var(--spacing-7);
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+
+.content {
+  max-width: 440px;
+}
+
+@media screen and (max-width: 992px) {
+  .content {
+    flex-shrink: 2;
+  }
+}
