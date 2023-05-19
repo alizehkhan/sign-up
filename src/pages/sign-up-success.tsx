@@ -29,7 +29,7 @@ export function SignUpSuccess() {
         </div>
         <p className={styles.helperText}>
           Didn't receive an email? Check your spam folder or{" "}
-          <Link to="/resend-confirmation-email">resend email</Link>.
+          <Link to="/sign-up/resend-confirmation-email">resend email</Link>.
         </p>
       </Layout>
     </>
