@@ -85,3 +85,6 @@ Run the server `yarn dev` and in another session run `yarn cypress open`
 ## Github workflow
 
 `test.yml` runs all unit and e2e tests when a PR is opened / edited.
+
+<img width="1552" alt="Screenshot 2023-05-19 at 2 59 00 PM" src="https://github.com/alizehkhan/sign-up/assets/59119022/f1607506-92a3-4fef-a329-c8d1b8a865f1">
+
