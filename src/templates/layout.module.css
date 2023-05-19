@@ -13,8 +13,7 @@
 
 @media screen and (max-width: 576px) {
   .main {
-    flex-direction: column;
-    justify-content: start;
+    margin-bottom: var(--spacing-8);
   }
 }
 

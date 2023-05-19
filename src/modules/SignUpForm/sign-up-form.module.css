@@ -17,3 +17,9 @@
     flex-direction: column;
   }
 }
+
+.error {
+  color: var(--color-red-700);
+  font-size: var(--font-size-2);
+  margin-top: var(--spacing-3);
+}

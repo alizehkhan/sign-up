@@ -2,10 +2,10 @@
 
 - A sign up form that POSTs a JSON body to the endpoint with the following shape:
 
-  ```json
+  ```js
   {
-      email: string
-      first_name: string
+      email: string,
+      first_name: string,
       last_name: string
   }
   ```
@@ -47,7 +47,7 @@ A `<Layout />` component that includes the responsive Carousel / Masonry, Header
 
 - Quick and minimal setup.
 - Fast learning curve for any contributor. Freedom to easily target any element(s) using vanilla CSS selectors etc.
-- Solves global scoping and naming issue
+- Solves global namespacing issue
 - Allows us to use CSS variables.
 - Separation of concerns. CSS can be kept in a separate file from the markup.
 
@@ -58,6 +58,10 @@ A `<Layout />` component that includes the responsive Carousel / Masonry, Header
 - Cannot be easily redirected to the styling for a particular element.
 - Responsiveness is cumbersome to define via media queries.
 - If you want to change the values of CSS properties depending on a prop / variable in JSX, you either have to use inline styling (not good practice) or add / remove a class.
+
+### Unit test framework
+
+I should have used Vitest instead of Jest as my unit test framework (faster and minimal setup). Because Jest depends on Babel, I needed to configure a separate pipeline for testing that was different to what my Vite app used for dev and build time.
 
 ---
 
@@ -70,7 +74,7 @@ A `<Layout />` component that includes the responsive Carousel / Masonry, Header
 
 ### How to run unit tests
 
-Run all tests from the root with `yarn test --watch`
+Run all tests from the root with `yarn test`
 
 ### How to run end-to-end tests
 

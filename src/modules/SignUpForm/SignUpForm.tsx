@@ -27,24 +27,41 @@ const SignUpForm = () => {
 
     const formData = new FormData(formRef.current ?? undefined);
 
-    const response = await fetch("/submit", {
-      method: "POST",
-      body: JSON.stringify(Object.fromEntries(formData)),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    try {
+      const response = await fetch("/submit", {
+        method: "POST",
+        body: JSON.stringify(Object.fromEntries(formData)),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-    if (response?.ok) {
-      const user = Object.fromEntries(formData).email.toString();
-      setUser(user);
-      navigate("success");
-    } else {
-      const data = await response.json();
-      if (data?.error?.email) {
-        setCustomEmailError(data.error.email);
+      if (response?.ok) {
+        const user = Object.fromEntries(formData).email.toString();
+        setUser(user);
+        navigate("success");
       } else {
-        setErrorBannerMessage("Oops something went wrong. Please try again");
+        const data = await response.json();
+        if (data?.error?.email) {
+          setCustomEmailError(data.error.email);
+        } else {
+          setErrorBannerMessage(
+            "⚠️ Oops, something went wrong. Please try again"
+          );
+        }
+      }
+    } catch (error: any) {
+      if (
+        error.message === "Timeout" ||
+        error.message === "Network request failed"
+      ) {
+        setErrorBannerMessage(
+          "⚠️ Oops, please check your internet connection."
+        );
+      } else {
+        setErrorBannerMessage(
+          "⚠️ Oops, something went wrong. Please try again"
+        );
       }
     }
 
@@ -75,7 +92,9 @@ const SignUpForm = () => {
           Create account
         </Button>
       </div>
-      {errorBannerMessage && <p>{errorBannerMessage}</p>}
+      {errorBannerMessage && (
+        <p className={styles.error}>{errorBannerMessage}</p>
+      )}
     </form>
   );
 };

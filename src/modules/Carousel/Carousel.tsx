@@ -9,7 +9,7 @@ const Carousel = () => {
   const items = [
     <img
       className={styles.item}
-      src="/masonry-1.png"
+      src="/assets/masonry-1.png"
       alt="Friends enjoying a meal together they split the cost of using Splitify"
     />,
     <div className={`${styles.item} ${styles.split}`} aria-label="Split it!">
@@ -18,12 +18,12 @@ const Carousel = () => {
     <div className={`${styles.item} ${styles.pattern}`} />,
     <img
       className={styles.item}
-      src="/masonry-2.png"
+      src="/assets/masonry-2.png"
       alt="Onboarding screen of Splitify's mobile app"
     />,
     <img
       className={styles.item}
-      src="/masonry-3.png"
+      src="/assets/masonry-3.png"
       alt="A Splitify debit card"
     />,
   ];

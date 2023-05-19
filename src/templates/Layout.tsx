@@ -10,16 +10,19 @@ const Layout = ({ children }: { children: ReactNode }) => {
   const isTabletOrDesktop = useMediaQuery({ query: "(min-width: 576px)" });
 
   return (
-    <Container>
-      <div className={styles.app}>
-        <Header />
-        <main className={styles.main}>
-          <div className={styles.content}>{children}</div>
-          {isTabletOrDesktop ? <Masonry /> : <Carousel />}
-        </main>
-        <Footer />
-      </div>
-    </Container>
+    <div className={styles.app}>
+      <Header />
+      <main>
+        <Container>
+          <div className={styles.main}>
+            <div className={styles.content}>{children}</div>
+            {isTabletOrDesktop && <Masonry />}
+          </div>
+        </Container>
+        {!isTabletOrDesktop && <Carousel />}
+      </main>
+      <Footer />
+    </div>
   );
 };
 

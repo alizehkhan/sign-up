@@ -8,7 +8,7 @@ describe("Header", () => {
     render(<Header />);
 
     expect(screen.getByAltText("Splitify logo")).toBeInTheDocument();
-    expect(screen.getByRole("img")).toHaveAttribute("src", "/logo.svg");
+    expect(screen.getByRole("img")).toHaveAttribute("src", "/assets/logo.svg");
   });
 
   it("renders as header landmark", () => {

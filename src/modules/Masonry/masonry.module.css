@@ -31,7 +31,7 @@
 
 .pattern {
   background-size: 520px;
-  background-image: url("/logo-pattern.svg");
+  background-image: url("/assets/logo-pattern.svg");
   background-color: var(--color-lime-400);
   background-position: center;
   background-repeat: no-repeat;
