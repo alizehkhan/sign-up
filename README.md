@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ebd4f98e-a31d-4cb9-bb39-db4dcd02a276/deploy-status)](https://app.netlify.com/sites/signup-flow/deploys)
+
 # Sign-up flow for a fictional product, Sp/itify
 
 - A sign up form that POSTs a JSON body to the endpoint with the following shape:
